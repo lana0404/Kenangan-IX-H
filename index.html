@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H CLASS ALBUM</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Musik Latar -->
+  <audio id="bg-music" loop>
+    <source src="kepompong.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung audio.
+  </audio>
+
+  <!-- Tombol Kontrol Musik -->
+  <div class="text-center my-4">
+    <button onclick="toggleMusic()" id="musicBtn" class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600 transition">
+      Mainkan Musik
+    </button>
+  </div>
+
+  <!-- H CLASS ALBUM -->
+  <div class="container mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center mb-8">H CLASS ALBUM</h1>
+    
+    <!-- H CLASS ALBUM -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Foto 1 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in">
+        <img src="pembuka1.jpg" alt="Kenangan 1" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">VII H CLASS</p>
+        </div>
+      </div>
+      
+      <!-- Foto 2 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.3s;">
+        <img src="pembuka2.jpg" alt="Kenangan 2" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">IX H CLASS</p>
+        </div>
+      </div>
+      
+      <!-- Foto 3 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img1.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"dulu kita sahabat"</p>
+        </div>
+      </div>
+
+       <!-- Foto 4 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img2.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"teman begitu hangat"</p>
+        </div>
+      </div>
+
+<!-- Foto 5 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img3.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"mengalahkan sinar mentari"</p>
+        </div>
+      </div>
+
+<!-- Foto 6 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img4.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"dulu kita sahabat"</p>
+        </div>
+      </div>
+
+<!-- Foto 7 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img5.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"berteman bagai ulat"</p>
+        </div>
+      </div>
+
+<!-- Foto 8 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img6.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"berharap jadi kupu-kupu"</p>
+        </div>
+      </div>
+
+<!-- Foto 9 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img7.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"kini kita berjalan berjauh-jauhan"</p>
+        </div>
+      </div>
+
+<!-- Foto 10 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img8.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"kau jauhi diriku karna sesuatu"</p>
+        </div>
+      </div>
+
+<!-- Foto 11 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img9.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"mungkin ku terlalu bertindak kejauhan"</p>
+        </div>
+      </div>
+
+<!-- Foto 12 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img10.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"namun itu karna ku sayang"</p>
+        </div>
+      </div>
+
+<!-- Foto 13 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img11.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"persahabatan bagai kepompong"</p>
+        </div>
+      </div>
+
+<!-- Foto 14 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img112.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"mengubah ulat menjadi kupu-kupu"</p>
+        </div>
+      </div>
+
+<!-- Foto 15 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img122.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"persahabatan bagai kepompong"</p>
+        </div>
+      </div>
+
+<!-- Foto 16 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img13.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"hal yang tak mudah berubah jadi indah"</p>
+        </div>
+      </div>
+
+<!-- Foto 17 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img132.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"persahabatan bagai kepompong"</p>
+        </div>
+      </div>
+
+<!-- Foto 18 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img15.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"maklumi teman hadapi perbedaan"</p>
+        </div>
+      </div>
+
+      <!-- Tambahkan lebih banyak foto jika diinginkan -->
+    </div>
+  </div>
+
+<!-- Foto 19 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img152.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"persahabatan bagai kepompong"</p>
+        </div>
+      </div>
+
+<!-- Foto 20 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img16.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"nanananananana~~~"</p>
+        </div>
+      </div>
+
+<!-- Foto 21 -->
+      <div class="overflow-hidden rounded-lg shadow-lg fade-in" style="animation-delay: 0.6s;">
+        <img src="img17.jpg" alt="Kenangan 3" class="w-full h-64 object-cover hover:scale-105 transform transition duration-300">
+        <div class="p-4 bg-white">
+          <p class="text-center font-semibold">"Saya Lana40Hz mengucapkan terimakasih sebanyak-banyaknya. Bila ada salah selama ini, mohon di maafkan. Sampai jumpa di kehidupan selanjutnya"</p>
+        </div>
+      </div>
+
+  <script>
+    const music = document.getElementById('bg-music');
+    const btn = document.getElementById('musicBtn');
+    let isPlaying = false;
+
+    function toggleMusic() {
+      if (isPlaying) {
+        music.pause();
+        btn.textContent = "Mainkan Musik";
+      } else {
+        music.play();
+        btn.textContent = "Hentikan Musik";
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+
+</body>
+</html>
